@@ -1,0 +1,5 @@
+#include <stdio.h>
+/**
+ * main - This program prints a line using the puts function
+ * Return: 0
+ */
