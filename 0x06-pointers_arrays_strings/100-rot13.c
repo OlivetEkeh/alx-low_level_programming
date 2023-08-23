@@ -12,7 +12,7 @@ char *rot13(char *str)
 	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13_alphabet[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	int i, j;
+	int i;
 
 	while (*str != '\0')
 	{
@@ -23,7 +23,7 @@ char *rot13(char *str)
 		{
 			*str = rot13_alphabet[i];
 			break;
-	}
+		}
 		i++;
 	}
 
