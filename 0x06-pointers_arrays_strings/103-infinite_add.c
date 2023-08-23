@@ -19,7 +19,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		len2++;
 
 	if (len1 > size_r || len2 > size_r)
-	return 0;
+	return (0);
 
 	r[size_r] = '\0';
 	len1--, len2--, size_r--;
@@ -39,7 +39,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 
 	if (size_r < 0)
-	return 0;
+	return (0);
 
-	return r + size_r + 1;
+	return (r + size_r + 1);
 }
