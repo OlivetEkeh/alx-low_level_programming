@@ -1,0 +1,6 @@
+# Ignore _putchar
+_putchar
+
+# Ignore files ending with main.c
+*main.c
+
