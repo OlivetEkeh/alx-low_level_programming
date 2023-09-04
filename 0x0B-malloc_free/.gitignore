@@ -1,6 +1,11 @@
 # Ignore _putchar
 _putchar
 
+a
+
 # Ignore files ending with main.c
 *main.c
 
+c
+
+g
