@@ -2,11 +2,19 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+ * count_words - Helper function to count the number of words in a string.
+ * @str: The input string.
+ *
+ * Return: Number of words.
+ */
+
 int count_words(char *str)
 {
 	int count = 0;
 	int in_word = 0;
 	int i;
+	
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -27,19 +35,29 @@ int count_words(char *str)
 	return count;
 }
 
+/**
+ * strtow - Splits a string into an array of words.
+ * @str: The input string.
+ *
+ * Return: An array of strings (words).
+ */
 char **strtow(char *str)
 {
+	int word_count;
+	int i, j, k;
+	int word_length = 0;
+	char **word_array;
+
 	if (str == NULL || *str == '\0')
 		return NULL;
 
-	int word_count = count_words(str);
-	int i, j, k;
-	int word_length = 0;
+	word_count = count_words(str);
+
 
 	if (word_count == 0)
 		return NULL;
 
-	char **word_array = malloc((word_count + 1) * sizeof(char *));
+	word_array = malloc((word_count + 1) * sizeof(char *));
 	if (word_array == NULL)
 		return NULL;
 
