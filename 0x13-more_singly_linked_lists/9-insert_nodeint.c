@@ -7,7 +7,7 @@
  * @n: The integer value to be added to the new node.
  *
  * Return: The address of the new node, or NULL if it fails.
- * If it's not possible to add the new node at index idx, do not add it and return NULL.
+ * return NULL if its not possible to add new node to index.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
