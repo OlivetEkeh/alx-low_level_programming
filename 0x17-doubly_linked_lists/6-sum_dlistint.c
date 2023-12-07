@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - Returns the sum of all data in a doubly linked list.
+ * sum_dlistint - Returns the sum of all data in the list.
  * @head: The head of the list.
  *
  * Return: The sum of all data, or 0 if the list is empty.
